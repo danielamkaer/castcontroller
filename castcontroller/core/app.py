@@ -34,7 +34,7 @@ class Application:
 
             elif stat == 'inactive':
                 dev = self.cast.find_primary_device()
-                dev.play_audio(STREAMS[currentStream])
+                dev.play_audio(STREAMS[self.currentStream])
 
         elif message == 'home':
             stat = self.cast.determine_status()
